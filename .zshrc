@@ -14,6 +14,9 @@ ZSH_THEME="tmrmn"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
 
+case $(uname -a) in
+   *Microsoft*) unsetopt BG_NICE ;;
+esac
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
