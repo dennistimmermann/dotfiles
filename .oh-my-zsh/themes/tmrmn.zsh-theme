@@ -33,7 +33,7 @@ function collapse_pwd () {
 
 # get user if different from default
 function get_user() {
-  if [ $USER != $default_username ]; then echo "%{$c_user%}%n "; else echo ""; fi
+  if [ $USER != $DEFAULT_USER ]; then echo "%{$c_user%}%n "; else echo ""; fi
 }
 
 # get host name if remote session
